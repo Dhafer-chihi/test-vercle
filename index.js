@@ -10,16 +10,9 @@ app.get('/' , (req , res)=>{
 })
 
 
-const sequelize = new Sequelize('test' , 'root' , 'root' ,{
-    host : 'localhost',
-    dialect : 'mariadb',
-    logging : false
-})
 
 
-sequelize.authenticate()
-    .then(_=>console.log('Cennection has been established successfully.'))
-    .catch(error=>console.log('Unable to connect to the database:' , error))
-   
+
+
 
 app.listen(port ,() => console.log(`Le serveur démarre sur : http://localhost:${port}`))
