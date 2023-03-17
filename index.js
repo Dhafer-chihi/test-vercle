@@ -10,10 +10,10 @@ app.get('/' , (req , res)=>{
 })
 
 
-const sequelize = new Sequelize('test' , 'root' , '' ,{
+const sequelize = new Sequelize('test' , 'root' , 'root' ,{
     host : 'localhost',
-    dialect : 'mariadb',
-    logging : true
+    dialect : 'mysql',
+    logging : false
 })
 
 
