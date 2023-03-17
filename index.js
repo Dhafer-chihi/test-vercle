@@ -13,7 +13,7 @@ app.get('/' , (req , res)=>{
 const sequelize = new Sequelize('test' , 'root' , '' ,{
     host : 'localhost',
     dialect : 'mariadb',
-    logging : false
+    logging : true
 })
 
 
